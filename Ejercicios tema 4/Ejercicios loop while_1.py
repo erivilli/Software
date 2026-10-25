@@ -1,7 +1,6 @@
 # Exercici 1: Compte enrere
 # Imprimeix els números del 10 a l'1 fent servir un bucle while.
 
-print("Exercici 1:")
 numero = 10
 while numero >= 1:
   print(numero)

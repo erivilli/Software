@@ -4,8 +4,7 @@
 # Afegeix-hi el nombre 6 al final fent servir append().
 # Insereix-hi el nombre 10 a la posició 2 fent servir insert().
 # Modifica el primer element de la llista perquè sigui 0.
-
-print("\nExercici 1:")
+print("\Exercici 1:")
 llista = [1, 2, 3, 4, 5]
 llista.append(6)
 llista.insert(2, 10)

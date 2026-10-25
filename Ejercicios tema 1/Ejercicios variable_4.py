@@ -1,3 +1,4 @@
+
 # Exercici 1
 # Desa i mostra les dades d'un encaminador amb una f-string.
 nom_encaminador = "Router oficina"

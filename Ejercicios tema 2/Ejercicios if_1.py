@@ -14,7 +14,6 @@ else:
 
 # Exercici 2: Calculadora senzilla
 
-print("\nExercici 2:")
 num1 = float(input("Introdueix el primer nombre: "))
 num2 = float(input("Introdueix el segon nombre: "))
 operacio = input("Introdueix l'operació (+, -, *, /): ").strip()
@@ -39,7 +38,6 @@ else:
 
 # Exercici 3: Any de traspàs
 
-print("\nExercici 3:")
 any_triat = int(input("Introdueix un any: "))
 
 if (any_triat % 4 == 0 and any_triat % 100 != 0) or any_triat % 400 == 0:
@@ -47,29 +45,26 @@ if (any_triat % 4 == 0 and any_triat % 100 != 0) or any_triat % 400 == 0:
 else:
     print(f"{any_triat} no és un any de traspàs.")
 
-
 # Exercici 4: Classificar edats
 
-print("\nExercici 4:")
 edat = int(input("Introdueix una edat: "))
-
-if 0 <= edat <= 2:
-    print("Nadó")
-elif 3 <= edat <= 12:
-    print("Infant")
-elif 13 <= edat <= 17:
-    print("Adolescent")
-elif 18 <= edat <= 64:
-    print("Adult")
-elif edat >= 65:
-    print("Persona gran")
+if edat >= 0:
+    if edat <= 2:
+        print("Nadó")
+    elif edat <= 12:
+        print("Infant")
+    elif edat <= 17:
+        print("Adolescent")
+    elif edat <= 64:
+        print("Adult")
+    else:
+        print("Persona gran")
 else:
     print("Edat no vàlida.")
 
 
 # Exercici 5: Qualitat del senyal Wi-Fi
 
-print("\nExercici 5:")
 rssi = float(input("Introdueix el nivell de senyal RSSI en dBm: "))
 
 if rssi >= -50:
@@ -84,20 +79,18 @@ else:
 
 # Exercici 6: Nivell de recepció d'una connexió de fibra òptica
 
-print("\nExercici 6:")
 potencia = float(input("Introdueix la potència òptica rebuda en dBm: "))
 
-if potencia < -27:
-    print("El nivell és massa baix.")
-elif potencia <= -8:
+if -8>= potencia >=-27:
     print("El nivell és acceptable.")
-else:
+elif potencia > -8:
     print("El nivell és massa alt.")
+else:
+    print("El nivell és massa baix.")
 
 
 # Exercici 7: Consum mensual de dades mòbils
 
-print("\nExercici 7:")
 consum_gb = float(input("Introdueix el consum mensual de dades en GB: "))
 
 if consum_gb <= 20:
@@ -109,7 +102,6 @@ else:
 
 # Exercici 8: Diagnòstic d'una connexió de fibra
 
-print("\nExercici 8:")
 los_encès = input("L'indicador LOS està encès? (s/n): ").strip().lower()
 internet_encès = input("L'indicador d'Internet està encès? (s/n): ").strip().lower()
 
@@ -123,7 +115,6 @@ else:
 
 # Exercici 9: Bateria d'un sistema d'alimentació ininterrompuda (SAI)
 
-print("\nExercici 9:")
 bateria = float(input("Introdueix el percentatge de bateria del SAI: "))
 
 if bateria < 0 or bateria > 100:
@@ -138,7 +129,6 @@ else:
 
 # Exercici 10: Qualitat d'una connexió de xarxa
 
-print("\nExercici 10:")
 latencia = float(input("Introdueix la latència en ms: "))
 perdua = float(input("Introdueix el percentatge de paquets perduts: "))
 
@@ -158,7 +148,6 @@ else:
 
 # Exercici 11: Cost mensual d'un pla de dades
 
-print("\nExercici 11:")
 pla = input("Introdueix el tipus de pla (bàsic o plus): ").strip().lower()
 consum = float(input("Introdueix el consum mensual en GB: "))
 
@@ -180,7 +169,6 @@ else:
 
 # Exercici 12: Accés a un compte de client
 
-print("\nExercici 12:")
 compte_actiu = input("El compte està actiu? (s/n): ").strip().lower()
 contrasenya_correcta = input("La contrasenya és correcta? (s/n): ").strip().lower()
 
@@ -198,7 +186,6 @@ else:
 
 # Exercici 13: Diagnòstic d'un router
 
-print("\nExercici 13:")
 router_encès = input("El router està encès? (s/n): ").strip().lower()
 
 if router_encès != "s":
@@ -217,7 +204,6 @@ else:
 
 # Exercici 14: Prioritat d'una incidència de xarxa
 
-print("\nExercici 14:")
 servei_critic = input("La incidència afecta un servei crític? (s/n): ").strip().lower()
 usuaris = int(input("Quants usuaris estan afectats? "))
 
