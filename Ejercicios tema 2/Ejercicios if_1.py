@@ -1,6 +1,5 @@
 # Exercici 1: Determinar el més gran de dos nombres
 
-print("\nExercici 1:")
 num1 = int(input("Introdueix el primer nombre: "))
 num2 = int(input("Introdueix el segon nombre: "))
 
